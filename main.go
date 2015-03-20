@@ -57,7 +57,7 @@ func main() {
 
 		if urlCnt >= *batchLimit {
 			r := bufio.NewReader(os.Stdin)
-			fmt.Printf("Press any enter to continue. ")
+			fmt.Printf("Press enter to continue. ")
 			r.ReadString('\n')
 			batchCnt++
 			urlCnt = 0
